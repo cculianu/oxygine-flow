@@ -1,7 +1,9 @@
 cmake_minimum_required (VERSION 2.6)
 project (OXYGINE_FLOW)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+# Set the C++ standard to C++20
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(OXYGINE_FLOW_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/src)
 add_library(oxygine-flow STATIC 
